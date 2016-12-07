@@ -1,0 +1,21 @@
+<!doctype html><title>Something like GameBoy Emulator</title><script src="jquery.js"></script>
+<script src="cpu.js"></script>
+<script src="gb.js"></script>
+<link rel="stylesheet" href="view.css" /><header><h1>Something like GameBoy Emulator </h1></header><article><section><h2>View: Main / VRAM(Tile Map) / VRAM(Tile Patterns) </h2><p><canvas id="view"></canvas> <canvas id="vram_view"></canvas> <canvas id="vram_tile_view"></canvas> <canvas id="vram_window"></canvas> </p><p><input type="text" id="filename" value="galaxy.gb" /> <br /><button id="load">Load ROM</button><button id="run">Run</button><button id="stop">Stop</button><button id="step">Step Next</button></p><p>How To: "Load ROM" -> "Run" </p><hr /><h2>CPU </h2><p>
+<textarea id="cpu_state">CPU Info here</textarea> <br /><button id="cpu_state_reload">Reload</button></p><h2>Memory </h2><p>
+<textarea id="memory_state">Memory Info here</textarea> <br /><button id="memory_state_reload">Reload</button></p><h2>Cartridge </h2><p>
+<textarea id="cartridge_state">Cartridge Info here</textarea> </p></section><hr /><section><h2>Mini-runner </h2><p>mini mini </p><h3>memory </h3>
+<textarea id="mr-words">
+</textarea> <br /><button id="mr-run">Run</button><button id="mr-step">Step</button></section></article><hr /><footer><p>Author: <a href="http://yomogimochi.com/">Hiroyuki Sano</a> </p></footer><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29286456-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
